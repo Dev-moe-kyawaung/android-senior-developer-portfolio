@@ -12,6 +12,11 @@ import MailsSection from '@/components/MailsSection';
 import LovableSection from '@/components/LovableSection';
 import GitHubSection from '@/components/GitHubSection';
 import OrganizationsSection from '@/components/OrganizationsSection';
+import { redirect } from 'next/navigation';
+
+export default function RootPage() {
+  redirect('/en');
+}
 
 export default function Home() {
   useEffect(() => {
